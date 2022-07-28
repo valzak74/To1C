@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://stin-base.ru/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://stin-base.ru/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://stin-base.ru/">
+      <s:element name="GetRepairStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KvNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="KvDate" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepairStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRepairStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullRepairStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KvNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="KvDate" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullRepairStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullRepairStatusResult" type="tns:FullRepairStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FullRepairStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReplyState" type="tns:ReplyState" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompleteRepairStatus" type="tns:CompleteRepairStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReplyState">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompleteRepairStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="KvitNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="KvitDate" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Kontragent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Izdelie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZavNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RepairType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DatePriema" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PredvarSumma" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Summa" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllRepairsByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRepairsByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRepairsByUserIDResult" type="tns:RepairStatusArray" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RepairStatusArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReplyState" type="tns:ReplyState" />
+          <s:element minOccurs="0" maxOccurs="1" name="RepairStatuses" type="tns:ArrayOfCompleteRepairStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCompleteRepairStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CompleteRepairStatus" nillable="true" type="tns:CompleteRepairStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetClosedFlagVNabore">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iddoc" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="closed" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="worker" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="f0" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="f1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="f2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetClosedFlagVNaboreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetClosedFlagVNaboreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPriceList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SkladListStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomkListStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NomInSelect" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="BrendListStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BrendInSelect" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="harakter" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="opt" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="osob" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="spec" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rozn" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="zakaz" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyOst" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerListStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PeriodCode" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPriceListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPriceListResult" type="tns:PriceList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PriceList">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReplyState" type="tns:ReplyState" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExcelFile" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateDocuments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InputFile" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateDocumentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateDocumentsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullTovarProdagiForWeb">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFullTovarProdagiForWebResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullTovarProdagiForWebResult" type="tns:PriceList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullTovarForWeb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IncludeProperties" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullTovarForWebResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullTovarForWebResult" type="tns:PriceList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NomenklaturaProdana">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PeriodCode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NomenklaturaProdanaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NomenklaturaProdanaResult" type="tns:NomenklaturaProdanaReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="NomenklaturaProdanaReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReplyState" type="tns:ReplyState" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tovars" type="tns:ArrayOfTovar" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTovar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Tovar" nillable="true" type="tns:Tovar" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Tovar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EdId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="koff" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReportZakazReglament">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsMaster" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartDateStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDateStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fullInterf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CostZak" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PrihRas" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Upak" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MinOtgr" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Sertif" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="flHarak" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="flBrend" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomenkSelect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NomenkInclude" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProizSelect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProizInclude" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FilialStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PpBrakStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BrakStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RozStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OtstoyStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SobNugdyStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PodarkyStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProkatStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IlinStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportZakazReglamentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReportZakazReglamentResult" type="tns:ZakazReglamentReply" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ZakazReglamentReply">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReplyState" type="tns:ReplyState" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExcelFile" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Report" type="tns:ArrayOfZakazReglament" />
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:Results" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZakazReglament">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZakazReglament" nillable="true" type="tns:ZakazReglament" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZakazReglament">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NomID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Articul" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nomenklatura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Brend" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Site" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="NeZakup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sebestoim" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Spisstoim" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdStoim" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CostOpt" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CostOptSP" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CostRozn" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CostRoznSP" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CostZak" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokStartAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrihodAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RashodAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZamenaPlus" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZamenaMinus" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAllM" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAllMSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PredZakaz" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Spros" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dostavka" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RezRaspred" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="VNabore" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="VZayavke" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OPrihod" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndSvobodAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndSvobodAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="NalFilAll" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokAnalog" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PodZakaz" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PodZakazPlatno" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="zakaz" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="KolUpak" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="NeNadoZakup" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReglamentCenter" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReglamentTZ" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokTZ" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Komiss" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstHranenie" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokPP" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokBrakMX" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokRoz" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokOtstoy" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokSobNugdy" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokPodarky" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokProkat" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokIlin" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="KolPeremes" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="KolPeremesOpt" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certif" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CertifDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Remont" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemontM" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="sp" type="tns:ArrayOfSkladProperties" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSkladProperties">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SkladProperties" nillable="true" type="tns:SkladProperties" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SkladProperties">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ostatok" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="prodagi" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="nalFil" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Results">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdanoAllMSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OstatokEndSvobodAllSum" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SumReglament" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SumZakaz" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRepairStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRepairStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetRepairStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRepairStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFullRepairStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullRepairStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetFullRepairStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullRepairStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRepairsByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRepairsByUserID" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRepairsByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRepairsByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetClosedFlagVNaboreSoapIn">
+    <wsdl:part name="parameters" element="tns:SetClosedFlagVNabore" />
+  </wsdl:message>
+  <wsdl:message name="SetClosedFlagVNaboreSoapOut">
+    <wsdl:part name="parameters" element="tns:SetClosedFlagVNaboreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPriceListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPriceList" />
+  </wsdl:message>
+  <wsdl:message name="GetPriceListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPriceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateDocumentsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateDocuments" />
+  </wsdl:message>
+  <wsdl:message name="CreateDocumentsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFullTovarProdagiForWebSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullTovarProdagiForWeb" />
+  </wsdl:message>
+  <wsdl:message name="GetFullTovarProdagiForWebSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullTovarProdagiForWebResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFullTovarForWebSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullTovarForWeb" />
+  </wsdl:message>
+  <wsdl:message name="GetFullTovarForWebSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullTovarForWebResponse" />
+  </wsdl:message>
+  <wsdl:message name="NomenklaturaProdanaSoapIn">
+    <wsdl:part name="parameters" element="tns:NomenklaturaProdana" />
+  </wsdl:message>
+  <wsdl:message name="NomenklaturaProdanaSoapOut">
+    <wsdl:part name="parameters" element="tns:NomenklaturaProdanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReportZakazReglamentSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportZakazReglament" />
+  </wsdl:message>
+  <wsdl:message name="ReportZakazReglamentSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportZakazReglamentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Exchange1C77Soap">
+    <wsdl:operation name="GetRepairStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение короткого значения статуса ремонта</wsdl:documentation>
+      <wsdl:input message="tns:GetRepairStatusSoapIn" />
+      <wsdl:output message="tns:GetRepairStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullRepairStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение развернутого значения статуса ремонта</wsdl:documentation>
+      <wsdl:input message="tns:GetFullRepairStatusSoapIn" />
+      <wsdl:output message="tns:GetFullRepairStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRepairsByUserID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение развернутого статуса всех ремонтов клиента</wsdl:documentation>
+      <wsdl:input message="tns:GetAllRepairsByUserIDSoapIn" />
+      <wsdl:output message="tns:GetAllRepairsByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetClosedFlagVNabore">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Устанавливает флаг ГОТОВ в док-те Набор</wsdl:documentation>
+      <wsdl:input message="tns:SetClosedFlagVNaboreSoapIn" />
+      <wsdl:output message="tns:SetClosedFlagVNaboreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение прайс-листа в формате Excel</wsdl:documentation>
+      <wsdl:input message="tns:GetPriceListSoapIn" />
+      <wsdl:output message="tns:GetPriceListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocuments">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Создание документов Предварительная Заявка</wsdl:documentation>
+      <wsdl:input message="tns:CreateDocumentsSoapIn" />
+      <wsdl:output message="tns:CreateDocumentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarProdagiForWeb">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение отчета по всем купленным товарам клиентами для Web в виде CSV файла.</wsdl:documentation>
+      <wsdl:input message="tns:GetFullTovarProdagiForWebSoapIn" />
+      <wsdl:output message="tns:GetFullTovarProdagiForWebSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarForWeb">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Получение отчета по всем товарам для Web в виде CSV файла. Товары, не попавшие в файл считаются удаленными. Формирование ответа занимает 5-6 минут</wsdl:documentation>
+      <wsdl:input message="tns:GetFullTovarForWebSoapIn" />
+      <wsdl:output message="tns:GetFullTovarForWebSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NomenklaturaProdana">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Номенклатура, проданная контрагенту за период</wsdl:documentation>
+      <wsdl:input message="tns:NomenklaturaProdanaSoapIn" />
+      <wsdl:output message="tns:NomenklaturaProdanaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportZakazReglament">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Отчет Заказ по регламенту</wsdl:documentation>
+      <wsdl:input message="tns:ReportZakazReglamentSoapIn" />
+      <wsdl:output message="tns:ReportZakazReglamentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Exchange1C77Soap" type="tns:Exchange1C77Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRepairStatus">
+      <soap:operation soapAction="http://stin-base.ru/GetRepairStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullRepairStatus">
+      <soap:operation soapAction="http://stin-base.ru/GetFullRepairStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRepairsByUserID">
+      <soap:operation soapAction="http://stin-base.ru/GetAllRepairsByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetClosedFlagVNabore">
+      <soap:operation soapAction="http://stin-base.ru/SetClosedFlagVNabore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceList">
+      <soap:operation soapAction="http://stin-base.ru/GetPriceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocuments">
+      <soap:operation soapAction="http://stin-base.ru/CreateDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarProdagiForWeb">
+      <soap:operation soapAction="http://stin-base.ru/GetFullTovarProdagiForWeb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarForWeb">
+      <soap:operation soapAction="http://stin-base.ru/GetFullTovarForWeb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NomenklaturaProdana">
+      <soap:operation soapAction="http://stin-base.ru/NomenklaturaProdana" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportZakazReglament">
+      <soap:operation soapAction="http://stin-base.ru/ReportZakazReglament" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Exchange1C77Soap12" type="tns:Exchange1C77Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRepairStatus">
+      <soap12:operation soapAction="http://stin-base.ru/GetRepairStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullRepairStatus">
+      <soap12:operation soapAction="http://stin-base.ru/GetFullRepairStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRepairsByUserID">
+      <soap12:operation soapAction="http://stin-base.ru/GetAllRepairsByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetClosedFlagVNabore">
+      <soap12:operation soapAction="http://stin-base.ru/SetClosedFlagVNabore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceList">
+      <soap12:operation soapAction="http://stin-base.ru/GetPriceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocuments">
+      <soap12:operation soapAction="http://stin-base.ru/CreateDocuments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarProdagiForWeb">
+      <soap12:operation soapAction="http://stin-base.ru/GetFullTovarProdagiForWeb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTovarForWeb">
+      <soap12:operation soapAction="http://stin-base.ru/GetFullTovarForWeb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NomenklaturaProdana">
+      <soap12:operation soapAction="http://stin-base.ru/NomenklaturaProdana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportZakazReglament">
+      <soap12:operation soapAction="http://stin-base.ru/ReportZakazReglament" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Exchange1C77">
+    <wsdl:port name="Exchange1C77Soap" binding="tns:Exchange1C77Soap">
+      <soap:address location="http://localhost:62308/Exchange1C.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Exchange1C77Soap12" binding="tns:Exchange1C77Soap12">
+      <soap12:address location="http://localhost:62308/Exchange1C.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,12 @@
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\TestUKassa.exe.config
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\TestUKassa.exe
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\TestUKassa.pdb
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\Newtonsoft.Json.dll
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\Yandex.Checkout.V3.dll
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\Newtonsoft.Json.xml
+F:\Stin\1C_IIS\To1C\TestUKassa\bin\Debug\Yandex.Checkout.V3.xml
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.AssemblyReference.cache
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CoreCompileInputs.cache
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CopyComplete
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.exe
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.pdb

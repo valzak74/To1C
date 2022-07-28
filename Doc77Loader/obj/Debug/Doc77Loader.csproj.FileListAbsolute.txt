@@ -1,0 +1,10 @@
+F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\Doc77Loader.exe
+F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\Doc77Loader.pdb
+F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.csprojResolveAssemblyReference.cache
+F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.ProjectInstaller.resources
+F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.csproj.GenerateResource.Cache
+F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.exe
+F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.pdb
+F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\Doc77Loader.exe.config
+F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\DotNetZip.dll
+F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\DotNetZip.xml

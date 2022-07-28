@@ -1,0 +1,8 @@
+F:\Stin\1C_IIS\To1C\ScanExcel\bin\Debug\ScanExcel.exe
+F:\Stin\1C_IIS\To1C\ScanExcel\bin\Debug\ScanExcel.pdb
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.csprojAssemblyReference.cache
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.Form1.resources
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.Properties.Resources.resources
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.csproj.GenerateResource.cache
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.exe
+F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.pdb

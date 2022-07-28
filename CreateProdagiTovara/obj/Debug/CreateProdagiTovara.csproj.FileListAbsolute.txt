@@ -1,0 +1,7 @@
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.exe.config
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.exe
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.pdb
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.exe
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.pdb
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csprojAssemblyReference.cache
+F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csproj.CoreCompileInputs.cache

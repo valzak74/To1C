@@ -1,0 +1,21 @@
+﻿Выполняется установка сборки 'F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe
+   logfile = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.InstallLog
+Устанавливается служба Doc77Loader...
+Служба Doc77Loader успешно установлена.
+Создается исходный EventLog Doc77Loader в журнале Application...
+Выполняется фиксация сборки 'F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe
+   logfile = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.InstallLog
+Выполняется удаление сборки 'F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.exe
+   logfile = F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Release\Doc77Loader.InstallLog
+Выполняется удаление источника EventLog Doc77Loader.
+Выполняется удаление службы Doc77Loader из системы...
+Служба Doc77Loader успешно удалена из системы.

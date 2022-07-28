@@ -1,0 +1,17 @@
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\TestWebService.exe.config
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\TestWebService.exe
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\TestWebService.pdb
+F:\Stin\1C_IIS\To1C\TestWebService\obj\Debug\TestWebService.exe
+F:\Stin\1C_IIS\To1C\TestWebService\obj\Debug\TestWebService.pdb
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\DotNetZip.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\DotNetZip.xml
+F:\Stin\1C_IIS\To1C\TestWebService\obj\Debug\TestWebService.csproj.CoreCompileInputs.cache
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\BouncyCastle.Crypto.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\NPOI.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\NPOI.OOXML.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\NPOI.OpenXml4Net.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\Stin\1C_IIS\To1C\TestWebService\bin\Debug\BouncyCastle.Crypto.xml
+F:\Stin\1C_IIS\To1C\TestWebService\obj\Debug\TestWebService.csproj.AssemblyReference.cache
+F:\Stin\1C_IIS\To1C\TestWebService\obj\Debug\TestWebService.csproj.CopyComplete

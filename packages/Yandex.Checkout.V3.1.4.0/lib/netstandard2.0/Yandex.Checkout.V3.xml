@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yandex.Checkout.V3</name>
+    </assembly>
+    <members>
+        <member name="T:Yandex.Checkout.V3.AgentType">
+            <summary>
+            Тип посредника
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.banking_payment_agent">
+            <summary>
+            Банковский платежный агент
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.banking_payment_subagent">
+            <summary>
+            Банковский платежный субагент
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.payment_agent">
+            <summary>
+            Платежный агент
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.payment_subagent">
+            <summary>
+            Платежный субагент
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.attorney">
+            <summary>
+            Поверенный
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.commissioner">
+            <summary>
+            Комиссионер
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.AgentType.agent">
+            <summary>
+            Агент
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Amount">
+            <summary>
+            Payment amount
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Amount.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Amount.Currency">
+            <summary>
+            Three letter currency code (ex: RUB)
+            </summary>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">
+            <summary>
+            Expects the <paramref name="httpClient"/>'s BaseAddress and Authorization header to be set.
+            </summary>
+            <param name="httpClient"></param>
+            <param name="disposeOfHttpClient">
+            Dispose of the <paramref name="httpClient"/> when this AsyncClient is disposed.
+            </param>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CreatePaymentAsync(Yandex.Checkout.V3.NewPayment,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Payment creation
+            </summary>
+            <param name="payment">Payment information, <see cref="T:Yandex.Checkout.V3.NewPayment"/></param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CapturePaymentAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Payment capture
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CapturePaymentAsync(Yandex.Checkout.V3.Payment,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Payment capture, can be used to change payment amount.
+            If you do not need to make any changes to the payment use <see cref="M:Yandex.Checkout.V3.AsyncClient.CapturePaymentAsync(System.String,System.String,System.Threading.CancellationToken)"/>
+            </summary>
+            <param name="payment">New payment data</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.GetPaymentAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Query payment state
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CancelPaymentAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Payment cancellation
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CreateRefundAsync(Yandex.Checkout.V3.NewRefund,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Refund creation
+            </summary>
+            <param name="refund">Refund data</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Refund"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.GetRefundAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Query refund
+            </summary>
+            <param name="id">Refund id</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.Refund"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.CreateSettlementReceiptAsync(Yandex.Checkout.V3.SettlementReceipt,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Receipt creation
+            </summary>
+            <param name="receipt">Receipt information, <see cref="T:Yandex.Checkout.V3.SettlementReceipt"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.SettlementReceipt"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.GetReceiptAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Query receipt
+            </summary>
+            <param name="id">Receipt id</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.ReceiptInformation"/></returns>
+            <remarks>
+            See https://yookassa.ru/developers/api#get_receipt
+            </remarks>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.ParseMessageAsync(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Parses an HTTP request into a <see cref="T:Yandex.Checkout.V3.Message"/> object.
+            </summary>
+            <returns>A <see cref="T:Yandex.Checkout.V3.Message"/> object or null.</returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.AsyncClient.GetReceiptsAsync(Yandex.Checkout.V3.GetReceiptsFilter,System.Threading.CancellationToken)">
+            <summary>
+            Query receipts
+            </summary>
+            <param name="filter">Request filter parameters</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.ReceiptInformation"/></returns>
+            <remarks>
+            See https://yookassa.ru/developers/api#get_receipts_list
+            </remarks>
+        </member>
+        <member name="T:Yandex.Checkout.V3.CancellationReason">
+            <summary>
+            Причина отмены платежа
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.ThreeDSecureFailed">
+            <summary>
+            Не пройдена аутентификация по 3-D Secure. При новой попытке оплаты пользователю следует пройти аутентификацию, использовать другое платежное средство или обратиться в банк за уточнениями
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.CallIssuer">
+            <summary>
+            Оплата данным платежным средством отклонена по неизвестным причинам. Пользователю следует обратиться в организацию, выпустившую платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.CanceledByMerchant">
+            <summary>
+            Платеж отменен по API при оплате в две стадии
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.CardExpired">
+            <summary>
+            Истек срок действия банковской карты. При новой попытке оплаты пользователю следует использовать другое платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.CountryForbidden">
+            <summary>
+            Нельзя заплатить банковской картой, выпущенной в этой стране. При новой попытке оплаты пользователю следует использовать другое платежное средство.
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.ExpiredOnCapture">
+            <summary>
+            Истек срок списания оплаты у двухстадийного платежа. Если вы еще хотите принять оплату, повторите платеж с новым ключом идемпотентности и спишите деньги после подтверждения платежа пользователем
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.ExpiredOnConfirmation">
+            <summary>
+            Истек срок оплаты: пользователь не подтвердил платеж за время, отведенное на оплату выбранным способом. Если пользователь еще хочет оплатить, вам необходимо повторить платеж с новым ключом идемпотентности, а пользователю — подтвердить его
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.FraudSuspected">
+            <summary>
+            Платеж заблокирован из-за подозрения в мошенничестве. При новой попытке оплаты пользователю следует использовать другое платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.GeneralDecline">
+            <summary>
+            Причина не детализирована. Пользователю следует обратиться к инициатору отмены платежа за уточнением подробностей
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.IdentificationRequired">
+            <summary>
+            Превышены ограничения на платежи для кошелька в Яндекс.Деньгах. При новой попытке оплаты пользователю следует идентифицировать кошелек или выбрать другое платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.InsufficientFunds">
+            <summary>
+            Не хватает денег для оплаты. Пользователю следует пополнить баланс или использовать другое платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.InternalTimeout">
+            <summary>
+            Технические неполадки на стороне Яндекс.Кассы: не удалось обработать запрос в течение 30 секунд. Повторите платеж с новым ключом идемпотентности
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.InvalidCardNumber">
+            <summary>
+            Неправильно указан номер карты. При новой попытке оплаты пользователю следует ввести корректные данные
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.InvalidCsc">
+            <summary>
+            Неправильно указан код CVV2 (CVC2, CID). При новой попытке оплаты пользователю следует ввести корректные данные
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.IssuerUnavailable">
+            <summary>
+            Организация, выпустившая платежное средство, недоступна. При новой попытке оплаты пользователю следует использовать другое платежное средство или повторить оплату позже
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.PaymentMethodLimitExceeded">
+            <summary>
+            Исчерпан лимит платежей для данного платежного средства или вашего магазина. При новой попытке оплаты пользователю следует использовать другое платежное средство или повторить оплату на следующий день
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.PaymentMethodRestricted">
+            <summary>
+            Запрещены операции данным платежным средством (например, карта заблокирована из-за утери, кошелек — из-за взлома мошенниками). Пользователю следует обратиться в организацию, выпустившую платежное средство
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.CancellationReason.PermissionRevoked">
+            <summary>
+            Нельзя провести безакцептное списание: пользователь отозвал разрешение на автоплатежи. Если пользователь еще хочет оплатить, вам необходимо создать новый платеж, а пользователю — подтвердить оплату
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Client">
+            <summary>
+            Yamdex.Checkout HTTP API client
+            </summary>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="shopId">Shop ID</param>
+            <param name="secretKey">Secret web api key</param>
+            <param name="apiUrl">API URL</param>
+            <param name="userAgent">Agent name</param>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CreatePayment(Yandex.Checkout.V3.NewPayment,System.String)">
+            <summary>
+            Payment creation
+            </summary>
+            <param name="payment">Payment information, <see cref="T:Yandex.Checkout.V3.NewPayment"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CapturePayment(System.String,System.String)">
+            <summary>
+            Payment capture
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CapturePayment(Yandex.Checkout.V3.Payment,System.String)">
+            <summary>
+            Payment capture, can be used to change payment amount.
+            If you do not need to make any changes in payment use <see cref="M:Yandex.Checkout.V3.Client.CapturePayment(System.String,System.String)"/>
+            </summary>
+            <param name="payment">New payment data</param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.GetPayment(System.String)">
+            <summary>
+            Query payment state
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CancelPayment(System.String,System.String)">
+            <summary>
+            Payment cancelation
+            </summary>
+            <param name="id">Payment id, <see cref="P:Yandex.Checkout.V3.Payment.Id"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.Payment"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CreateRefund(Yandex.Checkout.V3.NewRefund,System.String)">
+            <summary>
+            Refund creation
+            </summary>
+            <param name="refund">Refund data</param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.NewRefund"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.GetRefund(System.String)">
+            <summary>
+            Query refund
+            </summary>
+            <param name="id">Refund id</param>
+            <returns><see cref="T:Yandex.Checkout.V3.NewRefund"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.CreateSettlementReceipt(Yandex.Checkout.V3.SettlementReceipt,System.String)">
+            <summary>
+            Receipt creation
+            </summary>
+            <param name="receipt">Receipt information, <see cref="T:Yandex.Checkout.V3.SettlementReceipt"/></param>
+            <param name="idempotenceKey">Idempotence key, use <value>null</value> to generate a new one</param>
+            <returns><see cref="T:Yandex.Checkout.V3.SettlementReceipt"/></returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.GetReceipt(System.String)">
+            <summary>
+            Query receipt
+            </summary>
+            <param name="id">Receipt id</param>
+            <returns><see cref="T:Yandex.Checkout.V3.ReceiptInformation"/></returns>
+            <remarks>
+            See https://yookassa.ru/developers/api#get_receipt
+            </remarks>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.GetReceipts(Yandex.Checkout.V3.GetReceiptsFilter,System.Threading.CancellationToken)">
+            <summary>
+            Query receipts
+            </summary>
+            <param name="filter">Request filter parameters</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/></param>
+            <returns><see cref="T:Yandex.Checkout.V3.ReceiptInformation"/></returns>
+            <remarks>
+            See https://yookassa.ru/developers/api#get_receipts_list
+            </remarks>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.ParseMessage(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Parses an HTTP request into a <see cref="T:Yandex.Checkout.V3.Message"/> object.
+            </summary>
+            <returns>A <see cref="T:Yandex.Checkout.V3.Message"/> object or null.</returns>
+        </member>
+        <member name="M:Yandex.Checkout.V3.Client.ParseMessage(System.String,System.String,System.String)">
+            <summary>
+            Parses an HTTP request into a <see cref="T:Yandex.Checkout.V3.Message"/> object.
+            </summary>
+            <returns>A <see cref="T:Yandex.Checkout.V3.Message"/> object or null.</returns>
+        </member>
+        <member name="F:Yandex.Checkout.V3.ConfirmationType.Redirect">
+            <summary>Вам нужно перенаправить пользователя на confirmation_url, полученный в платеже.</summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.ConfirmationType.External">
+            <summary>Для подтверждения платежа пользователю необходимо совершить действия во внешней системе (например, ответить на смс). От вас требуется только сообщить пользователю о дальнейших шагах.</summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.ConfirmationType.Embedded">
+            <summary>Действия, необходимые для подтверждения платежа, будут зависеть от способа оплаты, который пользователь выберет в виджете Яндекс.Кассы. Подтверждение от пользователя получит Яндекс.Касса — вам необходимо только встроить виджет к себе на страницу.</summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.ConfirmationType.QR">
+            <summary>Для подтверждения платежа пользователю необходимо просканировать QR-код. От вас требуется сгенерировать QR-код, используя любой доступный инструмент, и отобразить его на странице оплаты.</summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Customer">
+            <summary>
+            Информация о пользователе
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Customer.FullName">
+            <summary>
+            Для юрлица — название организации, для ИП и физического лица — ФИО.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Customer.Inn">
+            <summary>
+            ИНН пользователя (10 или 12 цифр).
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Customer.Email">
+            <summary>
+            Электронная почта пользователя.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Customer.Phone">
+            <summary>
+            Телефон пользователя. Указывается в формате ITU-T E.164, например 79000000000.
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.GetReceiptsFilter">
+            <summary>
+            Фильтр для запроса списка чеков 
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.CreatedAtGte">
+            <summary>
+            Фильтр по времени создания: время должно быть больше указанного значения или равно ему («с такого-то момента включительно»)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.CreatedAtGt">
+            <summary>
+            Фильтр по времени создания: время должно быть больше указанного значения («с такого-то момента, не включая его»)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.CreatedAtLte">
+            <summary>
+            Фильтр по времени создания: время должно быть меньше указанного значения или равно ему («по такой-то момент включительно»)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.CreatedAtLt">
+            <summary>
+            Фильтр по времени создания: время должно быть меньше указанного значения («по такой-то момент, не включая его»)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.Status">
+            <summary>
+            Фильтр по статусу чека
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.PaymentId">
+            <summary>
+            Фильтр по идентификатору платежа (получить все чеки для указанного платежа)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.RefundId">
+            <summary>
+            Фильтр по идентификатору возврата (получить все чеки для указанного возврата)
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.GetReceiptsFilter.Limit">
+            <summary>
+            Размер выдачи результатов запроса — количество объектов, передаваемых в ответе. Возможные значения: от 1 до 100
+            </summary>
+        </member>
+        <member name="M:Yandex.Checkout.V3.GetReceiptsFilterExtensions.CreateRequestUrl(Yandex.Checkout.V3.GetReceiptsFilter,System.String)">
+            <summary>
+            Создать строку для запроса списка чеков
+            </summary>
+            <param name="filter"><see cref="T:Yandex.Checkout.V3.GetReceiptsFilter"/></param>
+            <param name="cursor">Указатель на следующий фрагмент списка</param>
+        </member>
+        <member name="T:Yandex.Checkout.V3.NewPayment">
+            <summary>
+            Исходные данные для создания платежа.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Amount">
+            <summary>
+            Сумма платежа. 
+            Иногда партнеры Яндекс.Кассы берут с пользователя дополнительную комиссию, которая не входит в эту сумму.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Description">
+            <summary>
+            Описание транзакции, которое вы увидите в личном кабинете Яндекс.Кассы, а пользователь — при оплате.
+            Например: "Оплата заказа №72 для user@yandex.ru"
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Capture">
+            <summary>
+            Автоматический прием поступившего платежа.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Confirmation">
+            <summary>
+            Данные, необходимые для инициации выбранного сценария подтверждения платежа пользователем.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Metadata">
+            <summary>
+            Дополнительные данные, которые можно передать вместе с запросом
+            и получить в ответе от Яндекс.Кассы для реализации внутренней логики. 
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewPayment.Receipt">
+            <summary>
+            Чек для проведения платежа по ФЗ-54 <see cref="T:Yandex.Checkout.V3.Receipt"/>
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.NewRefund">
+            <summary>
+            Данные для оформления возвората
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewRefund.Amount">
+            <summary>
+            Сумма к возврату
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewRefund.PaymentId">
+            <summary>
+            Идентификатор платежа
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.NewRefund.Receipt">
+            <summary>
+            Чек для проведения возврата по 54-ФЗ <see cref="T:Yandex.Checkout.V3.Receipt"/>
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Payment">
+            <inheritdoc />
+            <summary>
+            Информация о платеже.
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.PaymentMethodType">
+            <summary>
+            Типы платежей
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.PaymentMode">
+            <summary>
+            Признак способа расчета
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.FullPrepayment">
+            <summary>
+            Полная предоплата
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.PartialPrepayment">
+            <summary>
+            Частичная предоплата
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.Advance">
+            <summary>
+            Аванс
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.FullPayment">
+            <summary>
+            Полный расчет
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.PartialPayment">
+            <summary>
+            Частичный расчет и кредит
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.Credit">
+            <summary>
+            Кредит
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentMode.CreditPayment">
+            <summary>
+            Выплата по кредиту
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.PaymentSubject">
+            <summary>
+            Признак предмета расчета
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Commodity">
+            <summary>
+            Товар
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Excise">
+            <summary>
+            Подакцизный товар
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Job">
+            <summary>
+            Работа
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Service">
+            <summary>
+            Услуга
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.GamblingBet">
+            <summary>
+            Ставка в азартной игре
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.GamblingPrize">
+            <summary>
+            Выигрыш в азартной игре
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Lottery">
+            <summary>
+            Лотерейный билет
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.LotteryPrize">
+            <summary>
+            Выигрыш в лотерее
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.IntellectualActivity">
+            <summary>
+            Результаты интеллектуальной деятельности
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Payment">
+            <summary>
+            Платеж
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.AgentCommission">
+            <summary>
+            Агентское вознаграждение
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Composite">
+            <summary>
+            Несколько вариантов
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.PaymentSubject.Another">
+            <summary>
+            Другое
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Receipt">
+            <summary>
+            Чек
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Receipt.Phone">
+            <summary>
+            Номер телефона плательщика
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Receipt.Email">
+            <summary>
+            Электронная почта плательщика
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Receipt.Items">
+            <summary>
+            Пoзиции чека, <see cref="T:Yandex.Checkout.V3.ReceiptItem"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Receipt.TaxSystemCode">
+            <summary>
+            Система налогообложения, <see cref="T:Yandex.Checkout.V3.TaxSystem"/>
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.ReceiptInformation">
+            <summary>
+            Объект чека (Receipt) содержит актуальную информацию о чеке, созданном для платежа или возврата
+            </summary>
+            <remarks>
+            See https://yookassa.ru/developers/api#receipt_object
+            </remarks>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.Type">
+            <summary>
+            Тип чека в онлайн-кассе
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.PaymentId">
+            <summary>
+            Идентификатор платежа, для которого был сформирован чек
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.RefundId">
+            <summary>
+            Идентификатор возврата, для которого был сформирован чек. Отсутствует в чеке платежа
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.Status">
+            <summary>
+            Статус доставки данных для чека в онлайн-кассу
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.FiscalDocumentNumber">
+            <summary>
+            Номер фискального документа
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.FiscalStorageNumber">
+            <summary>
+            Номер фискального накопителя в кассовом аппарате
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.FiscalAttribute">
+            <summary>
+            Фискальный признак чека. Формируется фискальным накопителем на основе данных, переданных для регистрации чека
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.RegisteredAt">
+            <summary>
+            Дата и время формирования чека в фискальном накопителе
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.FiscalProviderId">
+            <summary>
+            Идентификатор чека в онлайн-кассе. Присутствует, если чек удалось зарегистрировать
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.TaxSystemCode">
+            <summary>
+            Система налогообложения, <see cref="T:Yandex.Checkout.V3.TaxSystem"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.Items">
+            <summary>
+            Список товаров в чеке (не более 100 товаров).
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.Settlements">
+            <summary>
+            Перечень совершенных расчетов.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptInformation.OnBehalfOf">
+            <summary>
+            Идентификатор магазина, от имени которого нужно отправить чек
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.ReceiptItem">
+            <summary>
+            Позиция чека
+            <seealso cref="T:Yandex.Checkout.V3.Receipt"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.Description">
+            <summary>
+            Наименование товара
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.Quantity">
+            <summary>
+            Количество
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.Amount">
+            <summary>
+            Стоимость
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.VatCode">
+            <summary>
+            Код налога, <see cref="T:Yandex.Checkout.V3.VatCode"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.PaymentSubject">
+            <summary>
+            Признак предмета расчета, <see cref="T:Yandex.Checkout.V3.PaymentSubject"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.PaymentMode">
+            <summary>
+            Признак способа расчета <see cref="T:Yandex.Checkout.V3.PaymentMode"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.ProductCode">
+            <summary>
+            Код товара — уникальный номер, который присваивается экземпляру товара при маркировке.
+            </summary>
+            <remarks>
+            See https://yookassa.ru/developers/api#create_receipt_items_product_code
+            </remarks>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.CountryOfOriginCode">
+            <summary>
+            Код страны происхождения товара по общероссийскому классификатору стран мира.
+            Пример: RU.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.CustomsDeclarationNumber">
+            <summary>
+            Номер таможенной декларации (от 1 до 32 символов).
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.Excise">
+            <summary>
+            Сумма акциза товара с учетом копеек.
+            Десятичное число с точностью до 2 символов после точки.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.AgentType">
+            <summary>
+            Тип посредника, реализующего товар или услугу
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.ReceiptItem.Supplier">
+            <summary>
+            Информация о поставщике товара или услуги
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.ReceiptRegistrationStatus">
+            <summary>
+            Состояние отправки чека по 54-ФЗ
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Recipient.AccountId">
+            <summary>
+            Идентификатор магазина в Яндекс.Кассе
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Refund">
+            <inheritdoc />
+            <summary>
+            Информация о возврате
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Refund.Id">
+            <summary>
+            Идентификатор возврата
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Refund.Status">
+            <summary>
+            Статус
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Refund.CreatedAt">
+            <summary>
+            Дата создания
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Settlement">
+            <summary>
+            Совершенный расчёт
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Settlement.Type">
+            <summary>
+            Тип расчета
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Settlement.Amount">
+            <summary>
+            Сумма расчета
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.SettlementReceipt">
+            <summary>
+            Данные для формирования чека
+            </summary>
+            <remarks>
+            Используется для создания чека отдельно от платежа или возврата,
+            см. 
+            See https://yookassa.ru/developers/api#create_receipt
+            </remarks>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.Type">
+            <summary>
+            Тип чека в онлайн-кассе
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.PaymentId">
+            <summary>
+            Идентификатор платежа в ЮKassa для отображения информации о чеке в личном кабинете, на платеж не влияет.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.RefundId">
+            <summary>
+            Идентификатор возврата в ЮKassa для отображения информации о чеке в личном кабинете.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.Customer">
+            <summary>
+            Информация о пользователе.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.Items">
+            <summary>
+            Список товаров в чеке (не более 100 товаров).
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.TaxSystemCode">
+            <summary>
+            Система налогообложения, <see cref="T:Yandex.Checkout.V3.TaxSystem"/>
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.Send">
+            <summary>
+            Формирование чека в онлайн-кассе сразу после создания объекта чека
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.Settlements">
+            <summary>
+            Перечень совершенных расчетов.
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.SettlementReceipt.OnBehalfOf">
+            <summary>
+            Идентификатор магазина, от имени которого нужно отправить чек
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementReceiptType.Payment">
+            <summary>
+            Приход
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementReceiptType.Refund">
+            <summary>
+            Возврат прихода
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementType.Cashless">
+            <summary>
+            Безналичный расчет
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementType.Prepayment">
+            <summary>
+            Предоплата (аванс)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementType.Postpayment">
+            <summary>
+            Постоплата (кредит)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.SettlementType.Consideration">
+            <summary>
+            Встречное предоставление
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.Supplier">
+            <summary>
+            Информация о поставщике товара или услуги
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Supplier.Name">
+            <summary>
+            Наименование поставщика
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Supplier.Phone">
+            <summary>
+            Телефон поставщика. Указывается в формате ITU-T E.164
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.Supplier.Inn">
+            <summary>
+            ИНН поставщика (10 или 12 цифр)
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.TaxSystem">
+            <summary>
+            Коды систем налогообложения
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.General">
+            <summary>
+            Общая система налогообложения
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.Simplified">
+            <summary>
+            Упрощенная (УСН, доходы)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.SimplifiedWithExpenses">
+            <summary>
+            Упрощенная (УСН, доходы минус расходы)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.Imputed">
+            <summary>
+            Единый налог на вмененный доход (ЕНВД)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.Agricultural">
+            <summary>
+            Единый сельскохозяйственный налог (ЕСН)
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.TaxSystem.Patent">
+            <summary>
+            Патентная система налогообложения
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.VatCode">
+            <summary>
+            Коды НДС
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.NoVat">
+            <summary>
+            Без НДС
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.Vat0">
+            <summary>
+            НДС по ставке 0%
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.Vat10">
+            <summary>
+            НДС по ставке 10%
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.Vat18">
+            <summary>
+            НДС по ставке 18%
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.Vat110">
+            <summary>
+            НДС по расчетной ставке 10/110
+            </summary>
+        </member>
+        <member name="F:Yandex.Checkout.V3.VatCode.Vat118">
+            <summary>
+            НДС чека по расчетной ставке 18/118
+            </summary>
+        </member>
+        <member name="T:Yandex.Checkout.V3.YandexCheckoutException">
+            <summary>
+            Represents a Yandex.Checkout API error response
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.YandexCheckoutException.StatusCode">
+            <summary>
+            Status code returned from server
+            </summary>
+        </member>
+        <member name="P:Yandex.Checkout.V3.YandexCheckoutException.Error">
+            <summary>
+            Error object returned from server
+            </summary>
+        </member>
+    </members>
+</doc>

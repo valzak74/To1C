@@ -1,0 +1,10 @@
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.exe.config
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.exe
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.pdb
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.exe
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.pdb
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\Renci.SshNet.dll
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\Renci.SshNet.xml
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.CoreCompileInputs.cache
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.CopyComplete
+F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.AssemblyReference.cache
