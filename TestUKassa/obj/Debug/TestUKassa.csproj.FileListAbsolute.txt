@@ -10,3 +10,4 @@ F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CoreCompileInputs.cac
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CopyComplete
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.exe
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.pdb
+F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.SuggestedBindingRedirects.cache

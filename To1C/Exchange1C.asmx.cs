@@ -6791,6 +6791,10 @@ namespace To1C
                         {
                             { "Менеджер", manager }
                         },
+                        PaymentMethodData = new Yandex.Checkout.V3.PaymentMethod
+                        {
+                            Type = "sbp"
+                        },
                         Confirmation = new Yandex.Checkout.V3.Confirmation
                         {
                             Type = Yandex.Checkout.V3.ConfirmationType.Redirect,
