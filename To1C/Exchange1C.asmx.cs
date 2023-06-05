@@ -6111,10 +6111,10 @@ namespace To1C
             {
                 string queryString = "select id, code, descr from sc55 (NOLOCK) where code in (" + string.Join(",", listSkl.Select(x => "'" + x + "'").ToArray()) + ");";
                 queryString = queryString + "select m.id as Id, m.DESCR as Name, m.sp14156 as ShortName, m.PARENTEXT as Parent, m.SP14155 as MarketType, m.SP14164 as Model from sc14042 m (NOLOCK) where (m.ISMARK = 0) order by m.SP14157;";
-                queryString = queryString + @"select mu.parentext as nomId, mu.sp14147 as marketId, mu.sp14198 as comission from sc14152 mu (NOLOCK) 
+                queryString = queryString + @"select mu.parentext as nomId, mu.sp14147 as marketId, mu.sp14198 as comission, mu.sp14229 as volumeWeight, mu.ISMARK from sc14152 mu (NOLOCK) 
                                         inner join sc84 as SpNom (NOLOCK) on (SpNom.id = mu.parentext)
                                         inner join SC8840 as proiz (NOLOCK) on proiz.id = SpNom.SP8842
-                                        where (mu.ISMARK = 0) " +
+                                        where (1 = 1) " +
                                             ((listNomk.Count > 0) ? " and " + SprInclude("sc84", "SpNom", string.Join(",", listNomk.Select(x => "'" + x + "'").ToArray()), ((NomenkInclude > 0) ? true : false)) : "") +
                                             ((listProiz.Count > 0) ? " and " + SprInclude("sc8840", "proiz", string.Join(",", listProiz.Select(x => "'" + x + "'").ToArray()), ((ProizInclude > 0) ? true : false), true) : "") +
                                             ";";
@@ -6345,7 +6345,9 @@ namespace To1C
                             {
                                 NomenkId = reader["nomId"].ToString().Trim(),
                                 MarketId = reader["marketId"].ToString(),
-                                Comission = Convert.ToDouble(reader["comission"], CultureInfo.InvariantCulture)
+                                Deleted = Convert.ToInt16(reader["ISMARK"]) == 1,
+                                Comission = Convert.ToDouble(reader["comission"], CultureInfo.InvariantCulture),
+                                VolumeWeight = Convert.ToDouble(reader["volumeWeight"], CultureInfo.InvariantCulture)
                             });
                         }
                     }
@@ -6537,8 +6539,23 @@ namespace To1C
                                 string Gr2 = reader.GetString(8).Trim();
                                 string Gr3 = reader.GetString(9).Trim();
                                 string Gr1Kom = reader.GetString(10).Trim();
+                                var semicolIndex = Gr1Kom.IndexOf(";");
+                                if (semicolIndex >= 0)
+                                {
+                                    Gr1Kom = Gr1Kom.Substring(0, semicolIndex);
+                                }
                                 string Gr2Kom = reader.GetString(11).Trim();
+                                semicolIndex = Gr2Kom.IndexOf(";");
+                                if (semicolIndex >= 0)
+                                {
+                                    Gr2Kom = Gr2Kom.Substring(0, semicolIndex);
+                                }
                                 string Gr3Kom = reader.GetString(12).Trim();
+                                semicolIndex = Gr3Kom.IndexOf(";");
+                                if (semicolIndex >= 0)
+                                {
+                                    Gr3Kom = Gr3Kom.Substring(0, semicolIndex);
+                                }
 
                                 if (!String.IsNullOrEmpty(Gr1))
                                 {
@@ -6579,8 +6596,9 @@ namespace To1C
                                         Parent = market.Parent,
                                         MarketType = market.MarketType,
                                         Model = market.Model,
-                                        Used = NomenkMarketplaces.Exists(x => (x.NomenkId == NomID) && (x.MarketId == market.Id)) ? "*" : "",
-                                        Comission = NomenkMarketplaces.Where(x => (x.NomenkId == NomID) && (x.MarketId == market.Id)).Sum(x => x.Comission)
+                                        Used = NomenkMarketplaces.Exists(x => (x.NomenkId == NomID) && (x.MarketId == market.Id) && !x.Deleted) ? "*" : "",
+                                        Comission = NomenkMarketplaces.Where(x => (x.NomenkId == NomID) && (x.MarketId == market.Id)).Sum(x => x.Comission),
+                                        VolumeWeight = NomenkMarketplaces.Where(x => (x.NomenkId == NomID) && (x.MarketId == market.Id)).Sum(x => x.VolumeWeight)
                                     });
                                 }
                                 zr.Mp = l_marketplaces.ToArray();
@@ -6691,13 +6709,13 @@ namespace To1C
                                         zr.OstatokIlin = currentND.OstatokIlin;
                                     }
                                 }
-                                if (!zr.NeNadoZakup || zr.PodZakaz > 0)
-                                {
+                                //if (!zr.NeNadoZakup || zr.PodZakaz > 0)
+                                //{
                                     zr.zakaz = Math.Max((zr.NalFilAll - zr.OstatokEndSvobodAll - zr.OPrihod + (IsMaster > 0 ? zr.PodZakaz : 0)), 0);
                                     zr.zakaz = Math.Ceiling(zr.zakaz);
                                     if (zr.KolUpak > 0)
                                         zr.zakaz = Math.Ceiling(zr.zakaz / zr.KolUpak);
-                                }
+                                //}
                                 List<SkladProperties> LsklProp = new List<SkladProperties>();
                                 foreach (SkladProperties sp in SklProperties)
                                 {

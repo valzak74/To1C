@@ -192,12 +192,15 @@ namespace To1C
         public string Model { get; set; }
         public string Used { get; set; }
         public double Comission { get; set; }
+        public double VolumeWeight { get; set; }
     }
     public class NomenkMarketplace
     {
         public string NomenkId { get; set; }
         public string MarketId { get; set; }
+        public bool Deleted { get; set; }
         public double Comission { get; set; }
+        public double VolumeWeight { get; set; }
    }
     public class NomenkProperties
     {
