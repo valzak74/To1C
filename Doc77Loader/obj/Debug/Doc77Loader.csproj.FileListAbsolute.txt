@@ -8,3 +8,15 @@ F:\Stin\1C_IIS\To1C\Doc77Loader\obj\Debug\Doc77Loader.pdb
 F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\Doc77Loader.exe.config
 F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\DotNetZip.dll
 F:\Stin\1C_IIS\To1C\Doc77Loader\bin\Debug\DotNetZip.xml
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\bin\Debug\Doc77Loader.exe.config
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\bin\Debug\Doc77Loader.exe
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\bin\Debug\Doc77Loader.pdb
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\bin\Debug\DotNetZip.dll
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\bin\Debug\DotNetZip.xml
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.ProjectInstaller.resources
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.csproj.GenerateResource.cache
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loa.84E39149.Up2Date
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.exe
+C:\Users\wsluh\source\repos\To1C\Doc77Loader\obj\Debug\Doc77Loader.pdb

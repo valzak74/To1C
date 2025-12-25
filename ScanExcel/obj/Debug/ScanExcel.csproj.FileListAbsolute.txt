@@ -6,3 +6,13 @@ F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.Properties.Resources.resources
 F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.csproj.GenerateResource.cache
 F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.exe
 F:\Stin\1C_IIS\To1C\ScanExcel\obj\Debug\ScanExcel.pdb
+C:\Users\wsluh\source\repos\To1C\ScanExcel\bin\Debug\ScanExcel.exe.config
+C:\Users\wsluh\source\repos\To1C\ScanExcel\bin\Debug\ScanExcel.exe
+C:\Users\wsluh\source\repos\To1C\ScanExcel\bin\Debug\ScanExcel.pdb
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.Form1.resources
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.Properties.Resources.resources
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.csproj.GenerateResource.cache
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.exe
+C:\Users\wsluh\source\repos\To1C\ScanExcel\obj\Debug\ScanExcel.pdb

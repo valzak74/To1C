@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\wsluh\\source\\repos\\To1C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\to1c\\const.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\const.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|solutionrelative:doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|solutionrelative:doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -56,44 +56,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T13:25:10.568Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Const.cs",
-              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
-              "RelativeDocumentMoniker": "To1C\\Const.cs",
-              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
-              "RelativeToolTip": "To1C\\Const.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwDIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-25T13:11:00.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Doc77Loader.cs",
-              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
-              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
-              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
-              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwD8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-25T13:04:26.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Doc77Loader.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
-              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
-              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs [Design]",
-              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-25T13:04:23.185Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -114,6 +76,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Const.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
+              "RelativeDocumentMoniker": "To1C\\Const.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
+              "RelativeToolTip": "To1C\\Const.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:11:00.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Doc77Loader.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwD8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:04:26.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doc77Loader.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs [Design]",
+              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:04:23.185Z"
             },
             {
               "$type": "Document",
@@ -153,16 +151,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Exchange1C.asmx.cs",
               "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Exchange1C.asmx.cs",
               "RelativeDocumentMoniker": "To1C\\Exchange1C.asmx.cs",
               "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Exchange1C.asmx.cs",
               "RelativeToolTip": "To1C\\Exchange1C.asmx.cs",
-              "ViewState": "AgIAACMIAAAAAAAAAAAvwDYIAABtAAAAAAAAAA==",
+              "ViewState": "AgIAACMIAAAAAAAAAAAvwDEIAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T13:25:10.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T13:25:10.568Z"
             }
           ]
         }

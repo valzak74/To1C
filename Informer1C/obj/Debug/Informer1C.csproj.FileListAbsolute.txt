@@ -55,3 +55,13 @@ F:\Stin\1C_IIS\To1C\Informer1C\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resour
 F:\Stin\1C_IIS\To1C\Informer1C\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
 F:\Stin\1C_IIS\To1C\Informer1C\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
 F:\Stin\1C_IIS\To1C\Informer1C\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.exe.config
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.AdvancedEditForm.resources
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.Form1.resources
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.Properties.Resources.resources
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.csproj.GenerateResource.cache
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.exe.licenses
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.exe
+C:\Users\wsluh\source\repos\To1C\Informer1C\obj\Debug\Informer1C.pdb

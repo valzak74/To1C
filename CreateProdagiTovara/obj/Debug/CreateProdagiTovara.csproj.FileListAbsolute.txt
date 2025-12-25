@@ -5,3 +5,13 @@ F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.exe
 F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.pdb
 F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csprojAssemblyReference.cache
 F:\Stin\1C_IIS\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.exe.config
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.exe
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\bin\Debug\CreateProdagiTovara.pdb
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\bin\Debug\Renci.SshNet.dll
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\bin\Debug\Renci.SshNet.xml
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\obj\Debug\CreatePr.6DC7B5F6.Up2Date
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.exe
+C:\Users\wsluh\source\repos\To1C\CreateProdagiTovara\obj\Debug\CreateProdagiTovara.pdb

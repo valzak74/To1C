@@ -11,3 +11,15 @@ F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CopyComplete
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.exe
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.pdb
 F:\Stin\1C_IIS\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.SuggestedBindingRedirects.cache
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\TestUKassa.exe.config
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\TestUKassa.exe
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\TestUKassa.pdb
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\Yandex.Checkout.V3.dll
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wsluh\source\repos\To1C\TestUKassa\bin\Debug\Yandex.Checkout.V3.xml
+C:\Users\wsluh\source\repos\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\TestUKassa\obj\Debug\TestUKassa.csproj.Up2Date
+C:\Users\wsluh\source\repos\To1C\TestUKassa\obj\Debug\TestUKassa.exe
+C:\Users\wsluh\source\repos\To1C\TestUKassa\obj\Debug\TestUKassa.pdb

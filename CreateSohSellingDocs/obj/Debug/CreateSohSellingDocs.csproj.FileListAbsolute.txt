@@ -4,3 +4,10 @@ F:\Stin\1C_IIS\To1C\CreateSohSellingDocs\bin\Debug\CreateSohSellingDocs.pdb
 F:\Stin\1C_IIS\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.csprojAssemblyReference.cache
 F:\Stin\1C_IIS\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.exe
 F:\Stin\1C_IIS\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.pdb
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\bin\Debug\CreateSohSellingDocs.exe.config
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\bin\Debug\CreateSohSellingDocs.exe
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\bin\Debug\CreateSohSellingDocs.pdb
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.exe
+C:\Users\wsluh\source\repos\To1C\CreateSohSellingDocs\obj\Debug\CreateSohSellingDocs.pdb
