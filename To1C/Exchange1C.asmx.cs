@@ -2093,6 +2093,11 @@ namespace To1C
                                                                         commandDT.Parameters["@nds"].Value = HDS.HDS_18;
                                                                         commandDT.Parameters["@sum_nds"].Value = summa * 18 / 118;
                                                                     }
+                                                                    else if (DateTime.Today.Year > 2025)
+                                                                    {
+                                                                        commandDT.Parameters["@nds"].Value = HDS.HDS_22;
+                                                                        commandDT.Parameters["@sum_nds"].Value = summa * 22 / 122;
+                                                                    }
                                                                     else
                                                                     {
                                                                         commandDT.Parameters["@nds"].Value = HDS.HDS_20;
@@ -2474,12 +2479,12 @@ namespace To1C
 
                 List<string> BadFolders = new List<string>();
                 BadFolders.Add(Nomenklatura.Musor); //Мусор код S00012726
-                BadFolders.Add(Nomenklatura.Uchenka); //Уцененные товары код D00000015
+                //BadFolders.Add(Nomenklatura.Uchenka); //Уцененные товары код D00000015
                 BadFolders.Add(Nomenklatura.ForMaster); //Для мастерской код A00003191
                 BadFolders.Add(Nomenklatura.PryamProd); //Прямые продажи код D00027231
                 BadFolders.Add(Nomenklatura.TorgOborud); //Торговое оборудование и рекламные материалы код D00007946
                 string[] paramBF = BadFolders.Select(x => "'" + x + "'").ToArray();
-                List<string> FirmaList = new List<string> { Firma.IP_pavlov, Firma.StinPlus, Firma.Stin_service };
+                List<string> FirmaList = new List<string> { Firma.IP_pavlov, Firma.StinPlus, Firma.Stin_service, Firma.Partner };
                 string[] paramFirma = FirmaList.Select(x => "'" + x + "'").ToArray();
                 queryString = string.Format(queryString, string.Join(",", paramBF), string.Join(",", paramFirma));
 
@@ -3596,7 +3601,7 @@ namespace To1C
             gc1.conditionType = "or";
             gc1.conditionsDDS = new List<DDS>() {
                 new DDS() { name = "j", param = "IDDOCDEF", condition = "=1611" }, //(ТекДок.Вид()=""Реализация"")
-                new DDS() { name = "DH1611", param = "SP1583", condition = " not in ('   19LS  ','    15S  ','    E0S  ')", conditionType = "and" } //(НЕ(ТекДок.Контрагент в СписокСвоихКонтрагентов))
+                new DDS() { name = "DH1611", param = "SP1583", condition = " not in ('   19LS  ','    15S  ','    E0S  ','  396QD  ')", conditionType = "and" } //(НЕ(ТекДок.Контрагент в СписокСвоихКонтрагентов))
             };
             gc.subCondition.Add(gc1);
 
@@ -3605,7 +3610,7 @@ namespace To1C
             gc1.conditionType = "or";
             gc1.conditionsDDS = new List<DDS>() {
                 new DDS() { name = "j", param = "IDDOCDEF", condition = "=1774" }, //(ТекДок.Вид()=""ОтчетКомиссионера"")
-                new DDS() { name = "DH1774", param = "SP1751", condition = " not in ('   19LS  ','    15S  ','    E0S  ')", conditionType = "and" } //(НЕ(ТекДок.Контрагент в СписокСвоихКонтрагентов))
+                new DDS() { name = "DH1774", param = "SP1751", condition = " not in ('   19LS  ','    15S  ','    E0S  ','  396QD  ')", conditionType = "and" } //(НЕ(ТекДок.Контрагент в СписокСвоихКонтрагентов))
             };
             gc.subCondition.Add(gc1);
 

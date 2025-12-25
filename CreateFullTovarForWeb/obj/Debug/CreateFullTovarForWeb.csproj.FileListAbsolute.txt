@@ -8,3 +8,13 @@ F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\bin\Debug\Renci.SshNet.xml
 F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.CoreCompileInputs.cache
 F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.CopyComplete
 F:\Stin\1C_IIS\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.exe.config
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.exe
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\bin\Debug\CreateFullTovarForWeb.pdb
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\bin\Debug\Renci.SshNet.dll
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\bin\Debug\Renci.SshNet.xml
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.AssemblyReference.cache
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.csproj.CoreCompileInputs.cache
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\obj\Debug\CreateFu.734BC66D.Up2Date
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.exe
+C:\Users\wsluh\source\repos\To1C\CreateFullTovarForWeb\obj\Debug\CreateFullTovarForWeb.pdb

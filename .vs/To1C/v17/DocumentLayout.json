@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wsluh\\source\\repos\\To1C\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\to1c\\const.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\const.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\exchange1c.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|solutionrelative:doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|c:\\users\\wsluh\\source\\repos\\to1c\\doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8E41686-2226-4E30-BD24-D771B04AC280}|Doc77Loader\\Doc77Loader.csproj|solutionrelative:doc77loader\\doc77loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\to1c\\filexls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B3F493-2B57-4489-AC6B-B700051BB350}|To1C\\To1C.csproj|solutionrelative:to1c\\filexls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267B2A9-D2BD-4051-BEE1-E78F29E33075}|CreateFullTovarForWeb\\CreateFullTovarForWeb.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\createfulltovarforweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5267B2A9-D2BD-4051-BEE1-E78F29E33075}|CreateFullTovarForWeb\\CreateFullTovarForWeb.csproj|solutionrelative:createfulltovarforweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5267B2A9-D2BD-4051-BEE1-E78F29E33075}|CreateFullTovarForWeb\\CreateFullTovarForWeb.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\createfulltovarforweb\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5267B2A9-D2BD-4051-BEE1-E78F29E33075}|CreateFullTovarForWeb\\CreateFullTovarForWeb.csproj|solutionrelative:createfulltovarforweb\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E71B224F-85A5-4BA7-96FE-4C5BB5564C49}|TestWebService\\TestWebService.csproj|C:\\Users\\wsluh\\source\\repos\\To1C\\testwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E71B224F-85A5-4BA7-96FE-4C5BB5564C49}|TestWebService\\TestWebService.csproj|solutionrelative:testwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileXLS.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\FileXLS.cs",
+              "RelativeDocumentMoniker": "To1C\\FileXLS.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\FileXLS.cs",
+              "RelativeToolTip": "To1C\\FileXLS.cs",
+              "ViewState": "AgIAAA4DAAAAAAAAAAAcwCADAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T13:25:10.568Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Const.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
+              "RelativeDocumentMoniker": "To1C\\Const.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Const.cs",
+              "RelativeToolTip": "To1C\\Const.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:11:00.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Doc77Loader.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwD8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:04:26.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doc77Loader.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs",
+              "RelativeDocumentMoniker": "Doc77Loader\\Doc77Loader.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\Doc77Loader\\Doc77Loader.cs [Design]",
+              "RelativeToolTip": "Doc77Loader\\Doc77Loader.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T13:04:23.185Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\CreateFullTovarForWeb\\Program.cs",
+              "RelativeDocumentMoniker": "CreateFullTovarForWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\CreateFullTovarForWeb\\Program.cs",
+              "RelativeToolTip": "CreateFullTovarForWeb\\Program.cs",
+              "ViewState": "AgIAAC8BAAAAAAAAAAApwBcBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T13:05:48.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\CreateFullTovarForWeb\\app.config",
+              "RelativeDocumentMoniker": "CreateFullTovarForWeb\\app.config",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\CreateFullTovarForWeb\\app.config",
+              "RelativeToolTip": "CreateFullTovarForWeb\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-15T13:00:30.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\TestWebService\\Program.cs",
+              "RelativeDocumentMoniker": "TestWebService\\Program.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\TestWebService\\Program.cs",
+              "RelativeToolTip": "TestWebService\\Program.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAiwM4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T13:25:10.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Exchange1C.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Exchange1C.asmx.cs",
+              "RelativeDocumentMoniker": "To1C\\Exchange1C.asmx.cs",
+              "ToolTip": "C:\\Users\\wsluh\\source\\repos\\To1C\\To1C\\Exchange1C.asmx.cs",
+              "RelativeToolTip": "To1C\\Exchange1C.asmx.cs",
+              "ViewState": "AgIAACMIAAAAAAAAAAAvwDEIAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T13:25:10.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

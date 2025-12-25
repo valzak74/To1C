@@ -45,6 +45,7 @@ namespace To1C
         public const string IP_pavlov = "     3S  "; //ИП Павлов
         public const string Stin_service = "     4S  "; //Стин-Сервис
         public const string StinPlus = "     1   "; //СТИН+
+        public const string Partner = "  38WJD  "; //ПАРТНЕР
     }
 
     class HDS
@@ -54,10 +55,11 @@ namespace To1C
         public const string HDS_10 = "    I8   "; //НДС 10%
         public const string HDS_18 = "   6F2   "; //НДС 18%
         public const string HDS_20 = "    I7   "; //НДС 20%
+        public const string HDS_22 = "   B3D   "; //НДС 22%
     }
 
     class OwnFirms
     {
-        public const string InCondition = "('" + Firma.IP_pavlov + "','" + Firma.StinPlus + "','" + Firma.Stin_service + "')";
+        public const string InCondition = "('" + Firma.IP_pavlov + "','" + Firma.StinPlus + "','" + Firma.Stin_service + "','" + Firma.Partner + "')";
     }
 }
