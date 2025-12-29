@@ -55,7 +55,7 @@ namespace To1C
         public const string HDS_10 = "    I8   "; //НДС 10%
         public const string HDS_18 = "   6F2   "; //НДС 18%
         public const string HDS_20 = "    I7   "; //НДС 20%
-        public const string HDS_22 = "   B3D   "; //НДС 22%
+        public const string HDS_22 = "   B3I   "; //НДС 22%
     }
 
     class OwnFirms
